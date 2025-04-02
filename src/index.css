@@ -1,0 +1,13 @@
+.product-image {
+  height: 200px;
+  width: 230px;
+}
+
+.Product-Card {
+  border: 2px solid gray;
+  border-radius: 50%;
+}
+.text
+{
+  font-family: 'Poppins', sans-serif;
+}
