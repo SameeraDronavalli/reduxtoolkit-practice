@@ -1,3 +1,4 @@
+
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux"
 import { apiData } from "../features/products/apiproductsSlice";
@@ -5,8 +6,8 @@ function ApiDataComponent() {
     const { status, error } = useSelector((state) => state.apiProducts);
     const myData = useSelector(state => state.apiProducts.data.products)
     // check the process correctly
-    console.log("Loading:", status);
-    console.log("Error:", error);
+    console.log("loading:", status);
+    console.log("error:", error);
     console.log("my show Data:", myData);
     
     const dispatch = useDispatch();
@@ -14,7 +15,7 @@ function ApiDataComponent() {
         () => {
             dispatch((apiData()))
         }, [dispatch])
-    if (status === "Loading") return <p>Loading...</p>;
+    if (status === "loading") return <p>Loading...</p>;
     if (status === "error") return <p>Error: {error}</p>;
     return (
         <>
