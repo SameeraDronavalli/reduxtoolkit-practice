@@ -20,7 +20,7 @@ function ApiDataComponent() {
     return (
         <>
             <div className="container">
-                <img src="https://m.media-amazon.com/images/I/61zAjw4bqPL._SX3000_.jpg" style={ { width: "100%", height: "300px", display: "block", marginBottom: "20px" }} />
+                <img src="https://m.media-amazon.com/images/I/61zAjw4bqPL._SX3000_.jpg" style={ { width: "100%", height: "300px", display: "block", marginBottom: "20px" }} alt="banner"/>
                 <h3 style={{ marginBottom: "30px", marginTop: "30px" }}>Quality Products, Fabulous Choices!</h3>
                 <div className="row">
                     {myData?.map(product => (
